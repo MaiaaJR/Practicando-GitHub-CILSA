@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="botones">
+            <h1>Formulario de Registro Básico</h1>
+            <p>Antes de iniciar, elija la opción de fondo que más se ajuste a sus preferencias:</p>
+            <button id="fondoClaro">Fondo claro</button>
+            <button id="fondoOscuro">Fondo oscuro</button>
+        </header>
+        <div id="form-container">
+            <form id="formulario">
+                <h2>Registro:</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Maia" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Ros" required>
+                
+                <label for="paisDeResidencia">País de residencia:</label>
+                <input type="text" id="paisDeResidencia" name="paisDeResidencia" placeholder="Ej: Argentina" required>
+                
+                <label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+                
+                <label for="direccionEmail">Correo electrónico:</label>
+                <input type="email" id="direccionEmail" name="direccionEmail" placeholder="Ej: mmm17@gmail.com" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
