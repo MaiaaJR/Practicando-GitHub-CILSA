@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="mb-4">
+            <h1>Formulario básico:</h1>
+            <p>Antes de iniciar, elija la opción de fondo que más se ajuste a sus preferencias:</p>
+            <button id="fondoClaro" class="btn btn-light">Fondo claro</button>
+            <button id="fondoOscuro" class="btn btn-dark">Fondo oscuro</button>
+        </header>
+        <div id="form-container">
+            <form id="formulario" class="needs-validation" novalidate>
+                <h2>Registro:</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Maia" required>
+                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ej: Ros" required>
+                    <div class="invalid-feedback">Ingresa tu apellido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="paisDeResidencia">País de residencia:</label>
+                    <input type="text" class="form-control" id="paisDeResidencia" name="paisDeResidencia" placeholder="Ej: Argentina" required>
+                    <div class="invalid-feedback">Ingresa tu país de residencia.</div>
+                </div>
+                <div class="form-group">
+                    <label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" class="form-control" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+                    <div class="invalid-feedback">Ingresa tu fecha de nacimiento.</div>
+                </div>
+                <div class="form-group">
+                    <label for="direccionEmail">Email:</label>
+                    <input type="email" class="form-control" id="direccionEmail" name="direccionEmail" placeholder="Ej: mmm17@gmail.com" required>
+                    <div class="invalid-feedback">Ingresa tu direccion de email</div>  
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
